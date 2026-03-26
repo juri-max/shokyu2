@@ -1,1 +1,82 @@
 @charset "UTF-8";
+
+html {
+    font-size: 100%;
+}
+
+body {
+    color: black;
+    font-family: "Noto Sans JP", serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.wrapper {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/*header*/
+#header .header-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+#header .header-title {
+    display: flex;
+    font-family: "Lato";
+    font-size: 28px;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+#header .header-list {
+    display: flex;
+    align-items: center;
+
+}
+
+#header .header-list li {
+    padding:30px 20px 40px 0;
+}
+
+#header .header-list .green-btn {
+    font-size: 16px;
+    display: block;
+    background: #006536;
+    color: white;
+    padding: 11px 29px;
+    border-radius: 20px;
+}
+
+/*main*/
+
+#mainvisual .main-img {
+    max-width: 1280px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+#mainvisual .text h1 {
+    font-size: 38px;
+}
+
+#mainvisual .text .green-btn {
+    font-size: 16px;
+    display: inline-block;
+    background: #006536;
+    color: white;
+    padding: 11px 29px;
+    border-radius: 20px;
+}
