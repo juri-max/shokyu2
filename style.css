@@ -60,6 +60,9 @@ a {
 }
 
 /*main*/
+#manvisual {
+    position: relative;
+}
 
 #mainvisual .main-img {
     max-width: 1280px;
@@ -68,8 +71,16 @@ a {
     margin: 0 auto;
 }
 
+#mainvisual .text {
+    position: absolute;
+    top: 30%;
+    left: 41%;
+    text-align: center;
+}
+
 #mainvisual .text h1 {
     font-size: 38px;
+    
 }
 
 #mainvisual .text .green-btn {
