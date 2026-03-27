@@ -73,14 +73,22 @@ a {
 
 #mainvisual .text {
     position: absolute;
-    top: 30%;
-    left: 41%;
+    top: 29%;
+    left: 30%;
     text-align: center;
+    width: 42%;
+    transform: translate(-50% -50%);
 }
 
 #mainvisual .text h1 {
     font-size: 38px;
-    
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+#mainvisual .text p {
+    line-height: 1.7;
+    margin-bottom: 25px;
 }
 
 #mainvisual .text .green-btn {
