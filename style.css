@@ -5,7 +5,7 @@ html {
 }
 
 body {
-    color: black;
+    color: #333333;
     font-family: "Noto Sans JP", serif;
 }
 
@@ -101,6 +101,11 @@ a {
     border-radius: 20px;
 }
 
+
+#appeal {
+    margin-bottom: 30px;
+}
+
 #appeal h1 {
     font-size: 28px;
     text-align: center;
@@ -132,3 +137,63 @@ a {
 #appeal .appeal-list p {
     font-size: 14px;
 }
+
+#inquiry {
+    position: relative;
+}
+
+#inquiry .inquiry-img{
+    max-width: 1280px;
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#inquiry .inquiry-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#inquiry .inquiry-text {
+    text-align: center;
+    position: absolute;
+    top: 25%;
+    left: 27%;
+}
+
+#inquiry .inquiry-text h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#inquiry .inquiry-text p {
+    font-weight: 700;
+    margin-bottom: 55px;
+}
+
+#inquiry .inquiry-btn {
+    display: flex;
+    justify-content: center;
+}
+
+#inquiry .inquiry-btn .blue-btn {
+    display: block;
+    color: #FFFFFF;
+    width: 186px;
+    background: #4356B7;
+    padding: 11px 44px;
+    border-radius: 20px;
+    margin-right: 32px;
+}
+
+#inquiry .inquiry-btn .green-btn {
+    font-size: 16px;
+    display: block;
+    background: #006536;
+    color: #FFFFFF;
+    padding: 11px 29px;
+    border-radius: 20px;
+}
+
