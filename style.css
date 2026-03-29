@@ -31,7 +31,25 @@ a {
 #header .header-inner {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
+
+#header .header-right {
+    display: flex;
+    align-items: center;
+}
+
+#header .header-inner .header-right .green-btn {
+    font-size: 16px;
+    display: inline-block;
+    background: #006536;
+    color: white;
+    width: 190px;
+    height: 53px;
+    padding: 11px 29px;
+    border-radius: 20px;
+}
+
 
 #header .header-title {
     display: flex;
@@ -43,21 +61,11 @@ a {
 
 #header .header-list {
     display: flex;
-    align-items: center;
-
 }
 
 #header .header-list li {
-    padding:30px 20px 40px 0;
-}
-
-#header .header-list .green-btn {
-    font-size: 16px;
-    display: block;
-    background: #006536;
-    color: white;
-    padding: 11px 29px;
-    border-radius: 20px;
+    padding-right:15px;
+    padding-left: 15px;
 }
 
 /*main*/
@@ -68,13 +76,20 @@ a {
 #mainvisual .main-img {
     max-width: 1280px;
     width: 100%;
-    height: auto;
-    margin: 0 auto 50px;
+    height: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#mainvisual .main-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 #mainvisual .text {
     position: absolute;
-    top: 29%;
+    top: 12%;
     left: 30%;
     text-align: center;
     width: 42%;
@@ -232,4 +247,49 @@ a {
 #footer .footer-text .footer-list a {
     display: block;
     color: #FFFFFF;
+}
+
+@media screen and (max-width: 767px) {
+    #header .header-inner {
+        justify-content: space-between;
+    }
+
+    #header .header-list {
+        display: none;
+    }
+
+
+    #header .header-inner .header-right .green-btn {
+        width: 169px;
+        border-radius: 80px;
+        text-align: center;
+        padding: 8px 19px;
+        margin-right: 30px;
+    }
+
+
+    #mainvisual .main-img {
+        height: 400px;
+        object-fit: cover;
+        margin-bottom: 30px;
+    }
+
+    #mainvisual .text {
+        width: 100%;
+        padding:0 20px;
+        text-align: left;
+        left: 0;
+        top: 35%;
+        transform: translateY(-50%);
+
+    }
+    #mainvisual .text h1 {
+        font-size: 26px;
+        line-height: 1.5;
+    }
+
+    #mainvisual .text p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
 }
